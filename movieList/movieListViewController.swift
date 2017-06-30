@@ -9,15 +9,16 @@
 import UIKit
 
 class movieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-//    let urlString = "http://api.androidhive.info/json/movies.json"
+    
+    //    let urlString = "http://api.androidhive.info/json/movies.json"
     
     @IBOutlet weak var movieTableView: UITableView!
+    
+    
     
     var movie:[Movie] = [Movie]()
     var currentMovies:[Movie] = [Movie]()
     var counter = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,13 +44,31 @@ class movieListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.createCell(movie: movie[indexPath.row])
         
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = movie[indexPath.row]
+        performSegue(withIdentifier: "goToDetail", sender: selectedMovie)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! DetailViewController
+        nextVC.movie = sender as! Movie
+    }
+    
+    @IBAction func addTapped(_ sender: Any) {
+        performSegue(withIdentifier: "goToCamera", sender: nil)
         
     }
     
-
+    
 }
+
+
+
+
+
+
+
+

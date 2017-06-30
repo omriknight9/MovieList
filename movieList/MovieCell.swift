@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MovieCell: UITableViewCell {
 
@@ -15,7 +16,6 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var releaseYearLbl: UILabel!
     @IBOutlet weak var ratingLbl: UILabel!
     @IBOutlet weak var movieImage: UIImageView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +26,15 @@ class MovieCell: UITableViewCell {
         self.titleLbl.text = movie.title
         self.releaseYearLbl.text = "\(movie.releaseYear)"
         self.ratingLbl.text = "\(movie.rating) ⭐️"
+        
+        movieImage.layer.cornerRadius = 10.0
+        movieImage.clipsToBounds = true
+        
+        self.movieImage.sd_setImage(with: URL(string: movie.image))
+        
+//        self.genreLbl.text = "\(movie.genre)"
+        
+        
         
         
     }

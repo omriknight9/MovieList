@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        perform(#selector(ViewController.goToList), with: nil, afterDelay: 3.0)
+        perform(#selector(ViewController.goToList), with: nil, afterDelay: 2.0)
         
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true

@@ -9,11 +9,11 @@
 import UIKit
 
 class Helpers: NSObject {
-    
-   class func downloadJson() -> [Movie] {
-    
-    var movie = [Movie]()
-    
+     
+    class func downloadJson() -> [Movie] {
+        
+        var movie = [Movie]()
+        
         if let url = Bundle.main.url(forResource: "movies", withExtension: "json") {
             if let data = NSData(contentsOf: url) {
                 do {
@@ -36,3 +36,7 @@ class Helpers: NSObject {
     }
 
 }
+
+
+
+
