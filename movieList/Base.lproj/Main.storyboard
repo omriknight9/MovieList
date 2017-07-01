@@ -189,14 +189,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-Kq-0ZI">
-                                <rect key="frame" x="37.5" y="103" width="300" height="200"/>
+                                <rect key="frame" x="37.5" y="86" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="lfc-VD-OKl"/>
                                     <constraint firstAttribute="height" constant="200" id="nUp-x5-vIz"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-kk-Xbr">
-                                <rect key="frame" x="28" y="333" width="319" height="39"/>
+                                <rect key="frame" x="28" y="316" width="319" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="UBa-mw-NpP"/>
                                     <constraint firstAttribute="width" constant="319" id="hIR-Ao-NIf"/>
@@ -206,7 +206,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zab-jI-HO6">
-                                <rect key="frame" x="28" y="392" width="319" height="46"/>
+                                <rect key="frame" x="28" y="375" width="319" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Bcv-1i-wd4"/>
                                     <constraint firstAttribute="width" constant="319" id="C4U-Ct-Y14"/>
@@ -216,7 +216,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBi-da-VXZ">
-                                <rect key="frame" x="133" y="591" width="109" height="36"/>
+                                <rect key="frame" x="133" y="586" width="109" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back To List"/>
                                 <connections>
@@ -224,7 +224,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-Gp-a7j">
-                                <rect key="frame" x="160.5" y="458" width="54" height="24"/>
+                                <rect key="frame" x="160.5" y="441" width="54" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -233,12 +233,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eNW-Gp-a7j" firstAttribute="top" secondItem="zab-jI-HO6" secondAttribute="bottom" constant="20" id="218-VB-ms8"/>
-                            <constraint firstItem="Sx0-Kq-0ZI" firstAttribute="top" secondItem="SSd-Lg-uh5" secondAttribute="bottom" constant="37" id="9pK-uk-UpA"/>
+                            <constraint firstItem="Sx0-Kq-0ZI" firstAttribute="top" secondItem="SSd-Lg-uh5" secondAttribute="bottom" constant="20" id="9pK-uk-UpA"/>
                             <constraint firstItem="LVW-kk-Xbr" firstAttribute="centerX" secondItem="j5c-rr-79i" secondAttribute="centerX" id="IvP-3f-YUE"/>
                             <constraint firstItem="SSd-Lg-uh5" firstAttribute="top" secondItem="PvM-et-02C" secondAttribute="bottom" constant="8" id="KgO-Re-xfO"/>
                             <constraint firstItem="zab-jI-HO6" firstAttribute="centerX" secondItem="j5c-rr-79i" secondAttribute="centerX" id="bG1-KT-FW5"/>
                             <constraint firstItem="LVW-kk-Xbr" firstAttribute="top" secondItem="Sx0-Kq-0ZI" secondAttribute="bottom" constant="30" id="bQy-xZ-lZU"/>
-                            <constraint firstItem="ckd-S8-clo" firstAttribute="top" secondItem="WBi-da-VXZ" secondAttribute="bottom" constant="40" id="e2j-Pz-Mdo"/>
+                            <constraint firstItem="ckd-S8-clo" firstAttribute="top" secondItem="WBi-da-VXZ" secondAttribute="bottom" constant="45" id="e2j-Pz-Mdo"/>
                             <constraint firstItem="zab-jI-HO6" firstAttribute="top" secondItem="LVW-kk-Xbr" secondAttribute="bottom" constant="20" id="jFL-H5-KFE"/>
                             <constraint firstItem="SSd-Lg-uh5" firstAttribute="centerX" secondItem="j5c-rr-79i" secondAttribute="centerX" id="jLz-DV-pbS"/>
                             <constraint firstItem="eNW-Gp-a7j" firstAttribute="centerX" secondItem="j5c-rr-79i" secondAttribute="centerX" id="lue-xJ-720"/>
