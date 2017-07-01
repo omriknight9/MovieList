@@ -29,6 +29,7 @@ class Helpers: NSObject {
                 }catch  {
                     print(error)
                 }
+                
             }
             
         }

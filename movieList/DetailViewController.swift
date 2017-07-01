@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var releaseYearLbl: UILabel!
     @IBOutlet weak var ratingLbl: UILabel!
-    
+    @IBOutlet weak var genreLbl: UILabel!
     var movie: Movie = Movie()
     
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
         titleLbl.text = movie.title
         ratingLbl.text = "Rating: \(movie.rating) ⭐️"
         releaseYearLbl.text = "Release Year: \(movie.releaseYear)"
+        genreLbl.text = "Genre: \(movie.genre!)"
         
         movieImage.layer.cornerRadius = 5.0
         movieImage.clipsToBounds = true

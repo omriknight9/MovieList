@@ -16,10 +16,11 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var releaseYearLbl: UILabel!
     @IBOutlet weak var ratingLbl: UILabel!
     @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var genreLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     func createCell(movie: Movie) {
@@ -31,11 +32,7 @@ class MovieCell: UITableViewCell {
         movieImage.clipsToBounds = true
         
         self.movieImage.sd_setImage(with: URL(string: movie.image))
-        
-//        self.genreLbl.text = "\(movie.genre)"
-        
-        
-        
+        self.genreLbl.text = movie.genre
         
     }
 
@@ -46,3 +43,5 @@ class MovieCell: UITableViewCell {
     }
 
 }
+
+

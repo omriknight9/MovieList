@@ -8,13 +8,11 @@
 
 import UIKit
 
-class movieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MovieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //    let urlString = "http://api.androidhive.info/json/movies.json"
     
     @IBOutlet weak var movieTableView: UITableView!
-    
-    
     
     var movie:[Movie] = [Movie]()
     var currentMovies:[Movie] = [Movie]()
@@ -58,10 +56,11 @@ class movieListViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func addTapped(_ sender: Any) {
-        performSegue(withIdentifier: "goToCamera", sender: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextView = storyBoard.instantiateViewController(withIdentifier: "goToCamera") as! CameraViewController
+        self.present(nextView, animated: true, completion: nil)
         
     }
-    
     
 }
 
