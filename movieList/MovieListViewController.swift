@@ -24,8 +24,8 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         movie = Helpers.downloadJson()
         self.movieTableView.reloadData()
         sort()
-        
     }
+    
     
     func sort() {
         movie.sort(by: { $0.releaseYear < $1.releaseYear })
