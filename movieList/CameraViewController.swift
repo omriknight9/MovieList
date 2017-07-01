@@ -78,10 +78,11 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             if metadataObj.stringValue != nil {
                 messageLbl.text = metadataObj.stringValue
-                
+ 
             }
         }
     }
+    
     
     @IBAction func goToList(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
