@@ -312,7 +312,7 @@
                                             <constraint firstAttribute="width" constant="359" id="U03-ig-gyv"/>
                                             <constraint firstAttribute="height" constant="27" id="ndx-RL-qii"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -321,7 +321,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="HB2-lH-KYY"/>
                                     <constraint firstItem="0aN-Z2-aEp" firstAttribute="centerX" secondItem="dts-W3-eJA" secondAttribute="centerX" id="LUz-4j-gVu"/>
+                                    <constraint firstAttribute="trailing" secondItem="0aN-Z2-aEp" secondAttribute="trailing" constant="8" id="eto-RM-hzh"/>
                                     <constraint firstAttribute="bottom" secondItem="0aN-Z2-aEp" secondAttribute="bottom" constant="14" id="x0x-CR-IjI"/>
+                                    <constraint firstItem="0aN-Z2-aEp" firstAttribute="leading" secondItem="dts-W3-eJA" secondAttribute="leading" constant="8" id="yUM-QH-fvc"/>
                                 </constraints>
                             </view>
                         </subviews>
